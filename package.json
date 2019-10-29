@@ -23,8 +23,6 @@
   "homepage": "https://github.com/josephklause-401-advanced-javascript/data-structures-and-algorithms#readme",
   "dependencies": {
     "eslint": "^6.4.0",
-    "jest": "^24.9.0",
-    "jsdoc": "^3.6.3",
-    "node": "^12.10.0"
+    "jest": "^24.9.0"
   }
 }
