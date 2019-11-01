@@ -27,7 +27,9 @@ function swap(arr, i, low) {
 }
 
 module.exports = {
-  quickSort
+  quickSort,
+  partition,
+  swap
 };
 
 
