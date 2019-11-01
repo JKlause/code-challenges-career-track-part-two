@@ -25,6 +25,15 @@ module.exports = class HashTable {
       } return undefined;
     }
   }
+  contains(key) {
+    const index = this.hash(key);
+    const bucket = this.arr[index];
+    for(let i = 0; i < bucket.length; i++) {
+      if(bucket[i][0] === key){
+        return true;
+      } return false;
+    }
+  }
 
   set(key, value) {
     const index = this.hash(key);

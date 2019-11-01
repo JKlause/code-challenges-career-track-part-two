@@ -26,7 +26,20 @@ describe('HashTable', () => {
     hashTable.set(key, value);
     expect(hashTable.get(key)).toBe(value);
   }); 
-
+  it('will return true if array contains a key', ()=> {
+    const hashTable = new HashTable();
+    const key = 'Joe';
+    const value = 'Klause';
+    hashTable.set(key, value);
+    expect(hashTable.contains(key)).toBe(true);
+  });
+  it('will return false if an array does not contains a key', ()=> {
+    const hashTable = new HashTable();
+    const key = 'Joe';
+    const value = 'Klause';
+    hashTable.set(key, value);
+    expect(hashTable.contains('dog')).toBe(false);
+  });
   it('will update value in an array', ()=> {
     const hashTable = new HashTable();
     const key = 'Joe';
