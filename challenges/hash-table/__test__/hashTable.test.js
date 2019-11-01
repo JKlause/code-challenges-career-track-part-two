@@ -25,8 +25,8 @@ describe('HashTable', () => {
     const value = 'Klause';
     hashTable.set(key, value);
     expect(hashTable.get(key)).toBe(value);
-  });
-  
+  }); 
+
   it('will update value in an array', ()=> {
     const hashTable = new HashTable();
     const key = 'Joe';
